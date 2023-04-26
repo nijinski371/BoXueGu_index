@@ -226,3 +226,280 @@
     height: 450px;
     background-color: rgba(0,0,0,0.3);
 }
+
+/* top_cover */
+/* 感觉示意图的底框线要宽一点，不太清除怎么做？ */
+.banner .top_cover{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.banner .top_cover ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    
+}
+
+.banner .top_cover a{
+    display: block;
+    padding: 0 2px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #d8d8d8;
+    /* border-bottom: 1px solid #EF8220; */
+}
+
+
+.banner .top_cover a:hover{
+    color: #fff;
+    border-bottom: 1px solid #EF8220;
+}
+
+/* right menu */
+
+.banner .menu{
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.banner .menu ul{
+    list-style: disc;
+}
+.banner .menu ul li{
+    font-size: 13px;
+    margin-top: 19px;
+}
+.banner .menu ul li:last-child{
+    margin-bottom: none;
+}
+.banner .menu ul li a{
+    color: #fff;
+}
+.banner .menu ul li a:hover{
+    color: #EF8220;
+}
+
+/* banner下方黑色导航栏 */
+.black_nav{
+    height: 90px;
+    background-color: #191E26;
+}
+.black_nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.black_nav li{
+    width: 328px;
+    height: 90px;
+    /* background-color: #EF8220; */
+    color: #fff;
+}
+.black_nav li{
+    padding-left: 92px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+.black_nav  .active{
+    background-color: #EF8220;
+}
+.black_nav li .pic{
+    margin-right: 10px;
+}
+.black_nav li .pic img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.black_nav li .txt a{
+    color: #fff;
+}
+
+.black_nav li:hover{
+    background-color: #EF8220;
+}
+
+/* 交互实验室 */
+.lab .content{
+    position: relative;
+}
+/* title公共样式 */
+.title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.title .left h4{
+    font-size: 25px;
+
+}
+.title .right a{
+    font-size: 16px;
+    color: #8B8A8B;
+}
+
+/* 交互实验室内容部分 */
+.lab .txt1{
+    position: absolute;
+    top: 42px;
+    left: 50px;
+    width: 193px;
+    height: 91px;
+
+}
+.dialog{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 193px;
+    height: 88px;
+    border: 1px solid #FFE7D1;
+    box-shadow: 0 0 14px 0 #FFE9D4;
+    border-radius: 6px;
+}
+
+.dialog:before,
+
+.dialog:after{  
+
+    position:absolute;  
+
+    content:'';
+
+    border: 15px solid;
+
+}  
+
+.dialog:before{  
+
+    right: 90px;
+
+    top: 85px;
+
+    border-color: #FFE9D4 transparent transparent transparent;
+
+}  
+
+.dialog:after{  
+
+    border-color: #fff transparent transparent transparent;
+
+    right: 90px;
+
+    top: 83px;
+
+}
+
+.dialog .ilu{
+    position: relative;
+    margin-right: 10px;
+    width: 57px;
+    height: 45px;
+}
+
+/* 加margin图好像变了，等会解决 */
+.dialog .ilu img{
+
+    position: absolute;
+    object-fit: contain;
+}
+.dialog .ilu p{
+    position: absolute;
+    color: #3DCDCA;
+    font-size: 16px;
+    top: 15px;
+    left: 11px;
+}
+.dialog .word a{
+    font-size: 16px;
+    color: #9E9E9E;
+}
+.labcover{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    line-height: 63px;
+    background-color: #EF8220;
+}
+.labcover::before{
+    border-color: #EF8220 transparent transparent transparent;
+}
+.labcover::after{
+    border-color: #EF8220 transparent transparent transparent;
+}
+.labcover p{
+    font-size: 24px;
+    
+    color: #fff;
+}
+
+
+
+.txt1 .dialog .ilu p{
+    color: #F72B58;
+}
+
+
+.txt2{
+    position: absolute;
+    left: 190px;
+    top: 134px;
+}
+
+.txt3{
+    position: absolute;
+    left: 388px;
+    top: 160px;
+}
+
+.txt4{
+    position: absolute;
+    left: 811px;
+    top: 151px;
+}
+.txt5{
+    position: absolute;
+    left: 978px;
+    top: 51px;
+}
+
+.txt6{
+    position: absolute;
+    left: 1167px;
+    top: 133px;
+}
+
+.lab .txt1:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+
+.lab .txt2:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt3:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt4:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt5:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt6:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
