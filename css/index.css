@@ -503,3 +503,161 @@
     cursor: pointer;
     display: block;
 }
+
+/* 职业体系 */
+.title .left{
+    display: flex;
+}
+.title h5{
+    margin-left: 15px;
+    padding-left: 15px;
+    color: #999999;
+    font-size: 25px;
+    border-left: 3px solid #999999;
+}
+/* 职业体系 */
+.job .content{
+    margin-top: 30px;
+    height: 290px;
+}
+.job .content ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.job .content li{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 24px;
+    text-align: center;
+    width: 310px;
+    height: 290px;
+    border: 2px solid #EFEFEF;
+    border-radius: 10px;
+}
+.job .content .pic{
+    width: 208px;
+    height: 144px;
+}
+.job .content .txt h1{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #8B8A8B;
+}
+.job .content .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job .content .txt a{
+    margin-top: 20px;
+    display: block;
+    width: 160px;
+    height: 42px;
+    color: #FE933A;
+    border: 2px solid #FE933A;
+    text-align: center;
+    line-height: 42px;
+}
+
+.job .content .txt a:hover{
+    color: #fff;
+    background-color: #FE933A;
+}
+
+/* 热销课程 */
+.hot_class .content{
+    overflow: hidden;
+    height: 230px;
+}
+.hot_class .title{
+    margin-bottom: 30px;
+}
+.hot_class .content ul{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.hot_class .content li{
+    /* background-color: pink; */
+    width: 310px;
+    height: 230px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+}
+.hot_class .content li .pic img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.hot_class .content .txt{
+    display: flex;
+    padding: 0 15px;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.hot_class .content .txt .left h4{
+    font-size: 16px;
+}
+.hot_class .content .txt .left p{
+    font-size: 14px;
+    color: #FE933A;
+}
+.hot_class .content .txt .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    
+}
+.hot_class .content .txt .right img{
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+}
+.hot_class .content .txt .right p{
+    font-size: 12px;
+    color: #ABAFBD;
+}
+/* 热门就业班 */
+.employ .title{
+    margin-bottom: 30px;
+}
+.employ .content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.employ .content li{
+    width: 660px;
+    height: 258px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+}
+.employ .content li .pic{
+    height: 138px;
+
+}
+.employ .content li .txt .ilu{
+    object-fit: contain;
+    width: 44px;
+    height: 44px;
+}
+.employ .content li .txt .ilu img{
+    margin: auto;
+}
+.employ .content li .txt{
+    font-size: 18px;
+    color: #666666;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 100px;
+    height: 266px;
+    background-color: #2C3034 ;
+}
+
+
+
+
+
