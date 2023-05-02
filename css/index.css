@@ -228,7 +228,7 @@
 }
 
 /* top_cover */
-/* 感觉示意图的底框线要宽一点，不太清除怎么做？ */
+/* 感觉示意图的底框线要宽一点，不太清楚怎么做？ */
 .banner .top_cover{
     width: 300px;
     height: 40px;
@@ -345,6 +345,159 @@
 /* 交互实验室内容部分 */
 .lab .txt1{
     position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 45px;
+    left: 30px;
+}
+
+
+.lab .dialog .pic{
+    position: relative;
+    width: 220px;
+    height: 120px;
+}
+.lab .dialog .pic .ilu{
+    position: absolute;
+    width: 57px;
+    height: 45px;
+    left: 20px;
+    top: 25px;
+}
+.lab .dialog .pic p{
+    position: absolute;
+    color: #F72B58;
+    left: 33px;
+    top: 37px;
+
+}
+.lab .dialog .txt p{
+    width: 105px;
+    position: absolute;
+    color: #9E9E9E;
+    left: 89px;
+    top: 25px;
+}
+.labcover{
+    display: none;
+    width: 220px;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+}
+.labcover .content{
+    width: 220px;
+    height: 120px;
+    position: relative;
+}
+.labcover .content span {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 22px; 
+    left: 64px;
+    top: 35px;
+
+}
+.lab .txt1:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt2{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 135px;
+    left: 170px;
+}
+.lab .txt2 .dialog .pic p{
+    color: #3DCDCA;
+}
+.lab .txt2 .dialog .txt p{
+    color: #9E9E9E;
+}
+.lab .txt2:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt3{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 162px;
+    left: 366px;
+}
+.lab .txt3 .dialog .pic p{
+    color: #3DCDCA;
+}
+.lab .txt3 .dialog .txt p{
+    color: #9E9E9E;
+}
+.lab .txt3:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt4{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 152px;
+    left: 792px;
+}
+.lab .txt4 .dialog .pic p{
+    color: #3DCDCA;
+}
+.lab .txt4 .dialog .txt p{
+    color: #9E9E9E;
+}
+.lab .txt4 .dialog .txt p{
+    top: 37px;
+}
+.lab .txt4:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt5{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 66px;
+    left: 959px;
+}
+.lab .txt5 .dialog .pic p{
+    color: #3DCDCA;
+}
+.lab .txt5 .dialog .txt p{
+    color: #9E9E9E;
+}
+.lab .txt5:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+.lab .txt6{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 139px;
+    left: 1147px;
+}
+.lab .txt6 .dialog .pic p{
+    color: #3DCDCA;
+}
+.lab .txt6 .dialog .txt p{
+    color: #9E9E9E;
+}
+.lab .txt6 .dialog .txt p{
+    top: 37px;
+}
+.lab .txt6:hover .labcover{
+    cursor: pointer;
+    display: block;
+}
+/* 交互实验室内容部分 */
+/* .lab .txt1{
+    position: absolute;
     top: 42px;
     left: 50px;
     width: 193px;
@@ -405,8 +558,10 @@
 }
 
 /* 加margin图好像变了，等会解决 */
+/*
 .dialog .ilu img{
-
+    width: 57px;
+    height: 45px;
     position: absolute;
     object-fit: contain;
 }
@@ -502,7 +657,7 @@
 .lab .txt6:hover .labcover{
     cursor: pointer;
     display: block;
-}
+} */
 
 /* 职业体系 */
 .title .left{
@@ -622,33 +777,175 @@
 .employ .title{
     margin-bottom: 30px;
 }
-.employ .content ul{
+.employ .content{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.employ .content .left,
+.employ .content .right
+{
+    width: 660px;
+    height: 258px;
+     border: 1px solid #EFEFEF; 
+    border-radius: 10px;
+}
+.employ .content .txt{
+    margin-top: 21px;
+    padding: 0px 40px;
+}
+.employ .content  .txt ul{
     display: flex;
     justify-content: space-between;
 }
-.employ .content li{
+.employ .content  .txt .unit{
+    text-align: center;
+}
+.employ .content  .txt .unit img{
+    width: 48px;
+    height: 35px;
+}
+.employ .content  .txt .unit p{
+    margin-top: 12px;
+    color: #666666 ;
+    font-size: 18px;
+}
+.employ .pic{
+    position: relative;
+}
+.employ .content  .pic .pic_cover{
+    display: none;
+    position: absolute;
+    padding-top: 80px;
+    top: 0px;
+    left: 0px;
     width: 660px;
-    height: 258px;
+    height: 138px;
+    background-color: rgba(0,0,0,0.3);
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.employ .content  .pic .pic_cover a{
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background-color: #FE933A ;
+    color: #fff;
+    border-radius: 2px;
+}
+.employ .pic:hover .pic_cover{
+    display: block;
+
+}
+/* 推荐讲师 */
+
+.teacher .title{
+    margin-bottom: 30px;
+}
+
+.teacher .content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.teacher .content li{
+    width: 268px;
+    height: 177px;
+    /* background-color: pink; */
+}
+.teacher .content li .top{
+    display: flex;
+    justify-content: center;
+    
+}
+.teacher .content li .top .pic
+{
+    position: relative;
+}
+.teacher .content li .top .pic img{
+    width: 80px;
+    height: 80px;
+}
+.teacher .content li .top .pic .sub{
+    position: absolute;
+    left: 58px;
+    bottom: -6px;
+}
+.teacher .content li .top .pic .sub img{
+    width: 16px;
+    height: 16px;
+}
+.teacher .content li .top .txt{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.teacher .content li .top .txt p{
+    margin-top: 10px;
+    color: #999999;
+    font-size: 14px;
+}
+.teacher .content li .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    border-top: 2px solid #EFEFEF;
+    
+}
+.teacher .content li .bottom .left h4{
+    margin-top: 19px;
+    font-size: 14px;
+    color: #999999;
+}
+.teacher .content li .bottom .score
+{
+    
+    display: flex;
+    align-items: flex-end;
+    margin-top: 16px;
+}
+.teacher .content li .bottom .score span{
+    font-size: 14px;
+    color: #999999;
+}
+.teacher .content li .bottom .score .stars{
+    margin-left: 8px;
+}
+.teacher .content li .bottom .score .stars img{
+    width: 12px;
+    height: 12px;
+}
+.teacher .content li .bottom .right{
+    padding-top: 58px;
+    font-size: 14px;
+    color: #999999;
+}
+/* 传智旗下品牌 */
+
+.brand .title{
+    margin-bottom: 30px;
+}
+.brand .content{
+    padding: 22px 0;
+    width: 1360px;
+    height: 100px;
     border: 1px solid #EFEFEF;
     border-radius: 10px;
-}
-.employ .content li .pic{
-    height: 138px;
-
-}
-.employ .content li .txt .ilu{
-    object-fit: contain;
-    width: 44px;
-    height: 44px;
-}
-.employ .content li .txt .ilu img{
     margin: auto;
-}
-.employ .content li .txt{
-    font-size: 18px;
-    color: #666666;
-}
+    
 
+}
+.brand ul{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /* footer */
 .footer{
@@ -656,8 +953,52 @@
     height: 266px;
     background-color: #2C3034 ;
 }
+.footer .top .pic{
+    padding: 30px 0px;
+}
+.footer .top .pic ul{
+    display: flex;
+    justify-content: center;
+}
+.footer .top .pic li:first-child{
+    margin-right: 30px;
 
+}
+.footer .top .txt ul{
+    display: flex;
+    justify-content: center;
+}
 
+.footer .top .txt ul li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.footer .top .txt ul li:last-child{
+    margin-right: none;
+}
+
+.footer .top .txt{
+    padding-bottom: 30px;
+}
+.footer .top{
+    border-bottom: 1px solid #4D525A;
+}
+
+.footer .bottom {
+    padding-top: 30px;
+    color: #97979C;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer .bottom dd span{
+    margin-right: 30px;
+}
+.footer .bottom dd span:last-child{
+    margin-right: none;
+}
 
 
 
